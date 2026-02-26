@@ -1,4 +1,3 @@
-let f = fetch("https://api.openweathermap.org/data/2.5/weather?q=London&appid=80af9604612ffdc53c830615a50bcfd0&units=metric")
 // Your OpenWeatherMap API Key
 const API_KEY = '80af9604612ffdc53c830615a50bcfd0';  // Replace with your actual API key
 const API_URL = 'https://api.openweathermap.org/data/2.5/weather';
@@ -47,4 +46,4 @@ function displayWeather(data) {
 }
 
 // Call the function when page loads
-getWeather('London');
+getWeather('Canada');
