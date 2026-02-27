@@ -167,3 +167,85 @@ h1 {
         transform: rotate(360deg);
     }
 }
+/* 🌤️ Forecast Section */
+.forecast-section {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px solid #eee;
+}
+
+.forecast-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* 📦 Forecast Grid */
+.forecast-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+}
+
+/* 🃏 Forecast Card */
+.forecast-card {
+    background: linear-gradient(135deg, #f5f7ff, #e8ecff);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+/* ✨ Hover Effect */
+.forecast-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+/* 📅 Day Name */
+.forecast-card h4 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* 🌡️ Temperature */
+.forecast-card p:first-of-type {
+    font-size: 1.8rem;
+    color: #667eea;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* 🌥️ Description */
+.forecast-card p:last-of-type {
+    font-size: 0.9rem;
+    color: #666;
+    text-transform: capitalize;
+}
+
+/* 🌤️ Icon */
+.forecast-card img {
+    width: 60px;
+    height: 60px;
+}
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+
+    .forecast-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .forecast-card {
+        padding: 15px;
+    }
+
+    .forecast-card h4 {
+        font-size: 1rem;
+    }
+
+    .forecast-card p:first-of-type {
+        font-size: 1.4rem;
+    }
+}
